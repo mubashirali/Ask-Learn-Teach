@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back"    
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/texthead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:text="ASK LEARN TEACH"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/texthead2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/texthead"
+        android:layout_marginTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+        
+    <TextView
+        android:id="@+id/textqs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/texthead2"
+        android:layout_marginTop="15dp" />
+    
+   <EditText
+        android:id="@+id/Et_qs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textqs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" 
+        android:inputType="text"
+        />
+   
+    <ImageButton
+        android:id="@+id/button_start"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Et_qs"
+        android:layout_marginTop="15dp"
+        android:text="@string/start"
+        android:background="@drawable/roundedbutton"
+        android:contentDescription="@string/start"
+        android:src="@drawable/mic" />
+    
+        <Button
+        android:id="@+id/btnSend"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_start"
+        android:text="Submit" 
+        android:textColor="#ffffff"
+        />
+        
+  <ProgressBar
+        android:id="@+id/pB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSend"
+        android:layout_centerHorizontal="true" 
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/btnSend"
+        android:scrollbarAlwaysDrawVerticalTrack= "true"
+        android:scrollbarStyle="outsideInset"
+        android:textIsSelectable="true"
+        />
+
+  
+
+</RelativeLayout>
